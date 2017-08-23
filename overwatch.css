@@ -14,6 +14,9 @@ body {
 }
 
 .container {
+  background-image: url("/img/bastion.jpg");;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: grid;
   height: 600px;
   width: 100%;
@@ -79,4 +82,91 @@ body {
   content: "^";
   color: white;
   font-family: Overwatch;
+}
+
+.heroes {
+  grid-area: heroes;
+  display: grid;
+  grid-template-columns: 241px 213px 206px 177px;
+  padding-left: 75px;
+  grid-column-gap: 32px;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+}
+
+.option {
+  width: 30px;
+  height: 44px;
+  margin-right: 3.2px;
+  background: black;
+  background-size: cover;
+  transform: skewX(-15deg);
+  transform-origin: bottom left;
+  box-shadow: inset 0px 2px 0px 0px white, inset 0px -1px 0px 0px white;
+  border-radius: 3px;
+  transition-duration: 25ms;
+}
+
+.option:hover {
+  transform: scale(1.15) skewX(-15deg) translate(-2px, 2px);
+  box-shadow: 0px 0px 0px 3px #fff;
+  z-index: 2;
+}
+
+.select {
+  grid-area: select;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  height: 32px;
+  width: 110px;
+  border: 0;
+  margin-top: 15px;
+  font-size: 22px;
+  font-family: Overwatch;
+  letter-spacing: 2px;
+  color: white;
+  background-color: #b47900;
+}
+
+button:hover {
+  background-color: #df9600;
+}
+
+.gameinfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 23px;
+}
+
+.gametype {
+  font-size: 90px;
+  font-style: italic;
+  font-family: Overwatch;
+  color: #ce1631;
+}
+
+.map {
+  font-size: 28px;
+  font-family: Overwatch;
+  font-style: italic;
+  color: #fff;
+  position: relative;
+  top: -42px;
+  left: 13px;
+}
+
+.character {
+  font-size: 55px;
+  font-style: italic;
+  font-family: Overwatch;
+  color: white;
+  position: relative;
+  top: 13px;
+  left: -12px;
 }
